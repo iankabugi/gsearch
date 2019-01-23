@@ -1,0 +1,16 @@
+html{
+    background-image: url(https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=60);
+}
+img{
+    width: 200px;
+    height: 200px;
+
+}
+.form-control{
+    width: 350px;
+}
+.search-form{
+    padding-top: 50px;
+    border-top: none;
+    border-inline-end-color: blue;
+}
