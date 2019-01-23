@@ -1,0 +1,27 @@
+html{
+    background-image: no-repeat;
+    background-image: url(https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=60);
+}
+h1{
+    color: blue;
+    font-weight: 1000px;
+    margin-left: 400px;
+    background-color: white;
+    border-radius: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+
+}
+h3{
+    font-weight: 100px;
+    color:blueviolet;
+    margin-left: 450px;
+}
+.navbar{
+    font-size: 20px;
+    margin-left: 500px;background-color:white;
+    width:100px;
+    border-radius: 12px;
+
+    
+}
