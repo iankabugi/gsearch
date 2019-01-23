@@ -9,13 +9,15 @@ import { AppComponent } from './app.component';
 import { AboutComponent } from './about/about.component';
 import { HomeComponent } from './home/home.component';
 import { GsearchComponent } from './gsearch/gsearch.component';
+import { HighlightDirective } from './highlight.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     AboutComponent,
     HomeComponent,
-    GsearchComponent
+    GsearchComponent,
+    HighlightDirective
   ],
   imports: [
     BrowserModule,
