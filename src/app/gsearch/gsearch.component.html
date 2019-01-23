@@ -1,0 +1,47 @@
+<form action="" class="search-form">
+	<div class="form-group">
+		<input type="text" class="form-control" placeholder="Search users" [(ngModel)]="username" name="username" (keyup)="findProfile()">
+	</div>
+</form>
+<div *ngIf="profile">
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			{{profile.name}} ({{profile.login}})
+		
+		</div>
+		<div class="panel-body">
+			<div class="row">
+				<div class="col-sm-4">
+          <img src="{{profile.avatar_url}}" class="img" alt="Profile Image">
+          {{profile.name}} ({{profile.login}})
+          <p>
+              <button class="btn btn-secondary btn-lg"><span class="label label-default"> Followers {{profile.followers}}</span></button><br><br>
+              <button class="btn= btn-secondary btn-lg"><span class="label label-primary">Following {{profile.following}}</span></button><br><br>	
+              <button class="btn btn-secondary btn-lg"><span class="label label-info"> Repositories {{profile.public_repos}}</span></button><br>
+           </p>
+		
+				</div>
+				<div class="col-lg-6">
+					<div class="jumbotron">
+            	<ul class="list-group">
+                  <li class="list-group-item" *ngIf="profile.bio">{{profile.bio}}</li>
+                  <li class="list-group-item" *ngIf="profile.email"><a href="emailto:{{profile.email}}">{{profile.email}}</a></li>
+              </ul>
+					
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h3 class="panel-title">Repos</h3>
+							</div>
+							<div class="panel-body" *ngFor="let repo of repos">
+								<p class="clearfix">
+									{{repo.name}} 
+								</p>
+								<p>{{repo.description}}</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
